@@ -1,9 +1,9 @@
-import { Products } from "../components";
+import { HomeTemplate } from "@/templates/Home";
 
 export default function Home() {
   return (
     <>
-      <Products />
+      <HomeTemplate />
     </>
   );
 }

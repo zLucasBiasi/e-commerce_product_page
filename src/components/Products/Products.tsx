@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
+import Image from "next/image";
 
 import { Container } from "@/styles/global";
 
-import * as S from "./styles";
-import { Title } from "../Title";
 import { ProductsInformations } from "./ProductsInformations";
-import Image from "next/image";
+import { Title } from "../Title";
+
+import * as S from "./styles";
 
 export const Products = () => {
   return (
@@ -13,7 +13,7 @@ export const Products = () => {
       <Title>Air Force</Title>
       <S.Wrapper>
         {ProductsInformations?.map((item) => (
-          <Image src={item.image} alt={item.alt} key={item.id} />
+          <Image src={item.image} alt={item.alt} key={item.id} priority />
         ))}
       </S.Wrapper>
     </Container>
